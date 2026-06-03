@@ -21,7 +21,12 @@ import {
   MessageSquare,
   AlertCircle
 } from "lucide-react";
-
+import imgHeadphones from "../assets/images/handdrawn_headphones_1780450469139.png";
+import imgPlant from "../assets/images/handdrawn_plant_1780450485452.png";
+import imgCrane from "../assets/images/handdrawn_crane_1780450500734.png";
+import imgFlower from "../assets/images/flower_hd_1780401321111.png";
+import imgPostcardOne from "../assets/images/postcard_one_1780396511812.png";
+import imgPostcardTwo from "../assets/images/postcard_two_1780396523160.png";
 interface Bid {
   id: string;
   bidder: string;
@@ -54,12 +59,12 @@ interface MarketProps {
 
 // Preset Hand-drawn Illustration URLs
 const PRESET_ILLUSTRATIONS = [
-  { name: "手绘耳机", url: "/src/assets/images/handdrawn_headphones_1780450469139.png" },
-  { name: "手绘盆栽", url: "/src/assets/images/handdrawn_plant_1780450485452.png" },
-  { name: "千纸鹤", url: "/src/assets/images/handdrawn_crane_1780450500734.png" },
-  { name: "毕业设计花卉", url: "/src/assets/images/flower_hd_1780401321111.png" },
-  { name: "羊皮信笺", url: "/src/assets/images/postcard_one_1780396511812.png" },
-  { name: "复古书桌", url: "/src/assets/images/postcard_two_1780396523160.png" }
+  { name: "手绘耳机", url: imgHeadphones },
+  { name: "手绘盆栽", url: imgPlant },
+  { name: "千纸鹤", url: imgCrane },
+  { name: "毕业设计花卉", url: imgFlower },
+  { name: "羊皮信笺", url: imgPostcardOne },
+  { name: "复古书桌", url: imgPostcardTwo }
 ];
 
 export function Market({ onBack, babyCoins, setBabyCoins, playRippleChime }: MarketProps) {
