@@ -366,15 +366,24 @@ export default function App() {
 
   // Fetch shells
   const fetchShells = async () => {
-    try {
-      const res = await fetch("/api/shells");
-      if (res.ok) {
-        const data = await res.json();
-        setShells(data);
+    // 使用模拟数据，不再请求后端
+    const mockData = [
+      {
+        id: "1",
+        type: "emotion",
+        content: "春天的花开得很美，记忆留在花香里。",
+        author: "艺术系学长",
+        timestamp: new Date().toISOString()
+      },
+      {
+        id: "2",
+        type: "capsule",
+        content: "寻找那枚失落的贝币，开启一段旧时光。",
+        author: "Baby计划",
+        timestamp: new Date().toISOString()
       }
-    } catch (err) {
-      console.error("Error fetching shells:", err);
-    }
+    ];
+    setShells(mockData);
   };
 
   useEffect(() => {
@@ -864,7 +873,7 @@ export default function App() {
                       
                       {/* Ethereal Iridescent Open Clam Shell (贝壳不变, 不覆盖任何文字, 保持完美原质感) */}
                       <img
-                        src="/images/images/iridescent_shell_hero_1780394258959.png"
+                       src="/images/iridescent_shell_hero_1780394258959.png"
                         alt="Ethereal Iridescent Open Clam Shell"
                         referrerPolicy="no-referrer"
                         className="absolute inset-0 w-full h-full object-cover select-none opacity-100 transition-transform duration-700 hover:scale-[1.03] z-10"

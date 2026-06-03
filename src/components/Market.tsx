@@ -22,12 +22,12 @@ import {
   AlertCircle
 } from "lucide-react";
 const PRESET_ILLUSTRATIONS = [
-  { name: "手绘耳机", url: "/images/images/handdrawn_headphones_1780450469139.png" },
-  { name: "手绘盆栽", url: "/images/images/handdrawn_plant_1780450485452.png" },
-  { name: "千纸鹤", url: "/images/images/handdrawn_crane_1780450500734.png" },
-  { name: "毕业设计花卉", url: "/images/images/flower_hd_1780401321111.png" },
-  { name: "羊皮信笺", url: "/images/images/postcard_one_1780396511812.png" },
-  { name: "复古书桌", url: "/images/images/postcard_two_1780396523160.png" }
+  { name: "手绘耳机", url: "/images/handdrawn_headphones_1780450469139.png" },
+  { name: "手绘盆栽", url: "/images/handdrawn_plant_1780450485452.png" },
+  { name: "千纸鹤", url: "/images/handdrawn_crane_1780450500734.png" },
+  { name: "毕业设计花卉", url: "/images/flower_hd_1780401321111.png" },
+  { name: "羊皮信笺", url: "/images/postcard_one_1780396511812.png" },
+  { name: "复古书桌", url: "/images/postcard_two_1780396523160.png" }
 ];
 interface Bid {
   id: string;
