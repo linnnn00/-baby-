@@ -864,7 +864,7 @@ export default function App() {
                       
                       {/* Ethereal Iridescent Open Clam Shell (贝壳不变, 不覆盖任何文字, 保持完美原质感) */}
                       <img
-                        src="/src/assets/images/iridescent_shell_hero_1780394258959.png"
+                        src="/images/images/iridescent_shell_hero_1780394258959.png"
                         alt="Ethereal Iridescent Open Clam Shell"
                         referrerPolicy="no-referrer"
                         className="absolute inset-0 w-full h-full object-cover select-none opacity-100 transition-transform duration-700 hover:scale-[1.03] z-10"
