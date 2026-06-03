@@ -365,25 +365,34 @@ export default function App() {
   const [currentTime, setCurrentTime] = useState("");
 
   // Fetch shells
-  const fetchShells = async () => {
-    // 使用模拟数据，不再请求后端
-    const mockData = [
+ const fetchShells = async () => {
+    const myMockData = [
       {
         id: "1",
         type: "emotion",
-        content: "春天的花开得很美，记忆留在花香里。",
-        author: "艺术系学长",
-        timestamp: new Date().toISOString()
+        content: "愿每一颗心都能在这里找到归宿。",
+        author: "Baby计划",
+        timestamp: new Date().toISOString(),
+        x: 45,
+        y: 50
       },
       {
         id: "2",
         type: "capsule",
-        content: "寻找那枚失落的贝币，开启一段旧时光。",
-        author: "Baby计划",
-        timestamp: new Date().toISOString()
+        content: "这是来自未来的留言，你收到了吗？",
+        author: "拾光者",
+        timestamp: new Date().toISOString(),
+        x: 75,
+        y: 35
       }
     ];
-    setShells(mockData);
+
+    try {
+      setShells(myMockData);//
+      console.log("本地数据加载成功");
+    } catch (err) {
+      console.error("加载失败", err);
+    }
   };
 
   useEffect(() => {
