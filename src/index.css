@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Prata", "Noto Serif SC", serif;
+  --font-body: "Inter", sans-serif;
+  
+  --color-bg-primary: #faf9f9;
+  --color-text-primary: #181919;
+  --color-text-muted: #5f5e59;
+  --color-text-variant: #444748;
+  
+  --color-paper-warm: #f4f1ea;
+  --color-paper-secondary: #eeeeed;
+  --color-paper-container: #e5e2db;
+  
+  --color-border-outline: #747878;
+  --color-border-variant: rgba(196, 199, 199, 0.3);
+  
+  --color-accent-rose: #d9b7b7;
+  --color-accent-seafoam: #b7d9d5;
+  --color-accent-gold: #d9cdb7;
+}
+
+/* Custom utility styles */
+.paper-texture {
+  position: relative;
+}
+
+.paper-texture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.035;
+  pointer-events: none;
+  background-image: repeating-radial-gradient(circle at 17% 32%, #000, transparent 1px),
+                    repeating-radial-gradient(circle at 50% 50%, #000, transparent 1px);
+  background-size: 4px 4px, 6px 6px;
+  z-index: 1;
+}
+
+/* Typography rules to match custom system */
+.font-headline-custom {
+  font-family: var(--font-headline);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.font-body-custom {
+  font-family: var(--font-body);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.font-label-custom {
+  font-family: var(--font-headline);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Scrollbar styles to keep screen clean */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+
